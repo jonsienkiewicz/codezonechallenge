@@ -1,0 +1,68 @@
+.carousel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+        /* bottom, image */
+        url("base@2x.png");
+	background-size: cover;
+
+}
+
+
+
+.title {
+	margin: 10px 0;
+	text-align: center;
+	color: white;
+	box-sizing: border-box;
+	padding:0 75px;
+}
+.intro {
+	color: white;
+}
+
+.button {
+	background-color: #FF4F01;
+  	border: none;
+	color: white;
+	padding: 23px 45px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Roboto Condensed',sans-serif;
+	border-radius: 5px;
+}
+
+.button:hover,
+.button:active {
+	transition: background-color 0.5s ease;
+  	background-color: red;
+	background-color: #131D3B;
+}
+
+
+@media (max-width: 768px) {
+	.carousel {
+		height: 30vh;
+	}
+
+	.button {
+		padding: 10px 20px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.carousel {
+		height: 40vh;
+	}
+}
