@@ -18,15 +18,26 @@
 
 
 
-.title {
-	margin: 10px 0;
+.main__title {
+	width: 100%;
+	margin: 1rem 0;
 	text-align: center;
 	color: white;
 	box-sizing: border-box;
 	padding:0 75px;
 }
-.intro {
-	color: white;
+
+.main__intro {
+	width: 14rem;
+	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.main__intro-text {
+	margin: 0;
+	text-align: center;
+	letter-spacing: 3.2px;
+	color: #FFFFFF;
+	opacity: 1;
 }
 
 .button {
@@ -53,7 +64,7 @@
 
 @media (max-width: 768px) {
 	.carousel {
-		height: 30vh;
+		height: 40vh;
 	}
 
 	.button {
@@ -64,5 +75,12 @@
 @media (min-width: 769px) and (max-width: 1024px) {
 	.carousel {
 		height: 40vh;
+	}
+}
+
+@media (min-width: 769px) {
+	.main__title {
+		font-size: 60px;
+		width: 45rem;
 	}
 }
